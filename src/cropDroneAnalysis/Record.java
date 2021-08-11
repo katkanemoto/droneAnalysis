@@ -17,7 +17,7 @@ public class Record {
 	private double humidity;
 	private double windSpeed;
 	private double windDirection;
-	private String recordAsString;
+	private String recordAsString; 
 	
 	public Record(String station, String date, double temp, double humidity, double windSpeed, double windDirection,
 			String recordAsString) {

@@ -227,8 +227,9 @@ public class AnalysisProgram_GUI extends JFrame {
 			}
 			public void removeUpdate(DocumentEvent e) {
 				warn();
+				
 			}
-			public void insertUpdate(DocumentEvent e) {
+			public void insertUpdate(DocumentEvent e) { 
 				warn();
 			}
 

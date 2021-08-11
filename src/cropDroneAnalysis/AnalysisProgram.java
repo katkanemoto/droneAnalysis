@@ -135,5 +135,5 @@ public class AnalysisProgram {
 		return droneEquipmentCosts/numOfYearsUsed + (employeeTrainingCosts + employeeBenefitsCosts)*numOfEmployees + repairAndUpgradeCosts;
 	}
 	
-
+ 
 }
