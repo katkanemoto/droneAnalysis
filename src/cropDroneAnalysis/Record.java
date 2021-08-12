@@ -8,7 +8,7 @@ package cropDroneAnalysis;
  * wind_direction_set_1 as degrees - sometimes this field is blank
  */
 
-public class Record {
+public class Record implements RecordType{
 	
 	//data variable
 	private String station;

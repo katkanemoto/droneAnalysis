@@ -27,7 +27,7 @@ public class AnalysisProgram {
 	
 	//reading in the weather data
 	//**change these names to the files you are using
-	private static ArrayList<Record> weatherData = new ArrayList<Record>();
+	private static ArrayList<RecordType> weatherData = new ArrayList<RecordType>();
 	private static String mesoWestData = "KMOD.csv";
 	private static String outputFile = "2020_modesto.csv";
 
@@ -133,7 +133,5 @@ public class AnalysisProgram {
 	public double calculateEmployeeAndEquipmentCosts() {
 		// fixed costs = technology equipment costs  / num of years you are using it + employee training costs + employee benefits costs + technology upgrading and repair costs
 		return droneEquipmentCosts/numOfYearsUsed + (employeeTrainingCosts + employeeBenefitsCosts)*numOfEmployees + repairAndUpgradeCosts;
-	}
-	
- 
+	} 
 }
