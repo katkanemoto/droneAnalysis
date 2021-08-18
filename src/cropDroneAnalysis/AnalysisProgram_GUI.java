@@ -29,6 +29,7 @@ public class AnalysisProgram_GUI extends JFrame {
 	private JLabel employeeBenefitsCostLabel;
 	private JLabel repairAndUpgradeCostLabel;
 	private JLabel totalEmployeeAndEquipment;
+	private JLabel droneMixingEquipmentCostLabel;
 	private JTextField numOfEmployeesTextField;
 	private JTextField numOfYearsUsedTextField;
 	private AnalysisProgram analysis;
@@ -62,7 +63,7 @@ public class AnalysisProgram_GUI extends JFrame {
 		analysis = new AnalysisProgram();
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 714, 936);
+		setBounds(100, 100, 714, 1012);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -299,13 +300,13 @@ public class AnalysisProgram_GUI extends JFrame {
 		JTextArea beginngDate = new JTextArea();
 		beginngDate.setText("Beginning Date");
 		beginngDate.setLineWrap(true);
-		beginngDate.setBounds(10, 625, 140, 22);
+		beginngDate.setBounds(10, 688, 140, 22);
 		contentPane.add(beginngDate);
 		
 		JTextArea endingDate = new JTextArea();
 		endingDate.setText("EndingDate");
 		endingDate.setLineWrap(true);
-		endingDate.setBounds(10, 656, 140, 22);
+		endingDate.setBounds(10, 719, 140, 22);
 		contentPane.add(endingDate);
 		
 		JLabel lblDroneEquipmentSpraying = new JLabel("Drone Spraying Costs");
@@ -316,13 +317,13 @@ public class AnalysisProgram_GUI extends JFrame {
 		JTextArea txtrBatteryChargeTime = new JTextArea();
 		txtrBatteryChargeTime.setText("Battery Charge Time");
 		txtrBatteryChargeTime.setLineWrap(true);
-		txtrBatteryChargeTime.setBounds(10, 714, 140, 22);
+		txtrBatteryChargeTime.setBounds(10, 777, 140, 22);
 		contentPane.add(txtrBatteryChargeTime);
 		
 		JTextArea txtrBatteryLife = new JTextArea();
 		txtrBatteryLife.setText("Battery Life");
 		txtrBatteryLife.setLineWrap(true);
-		txtrBatteryLife.setBounds(10, 747, 140, 22);
+		txtrBatteryLife.setBounds(10, 810, 140, 22);
 		contentPane.add(txtrBatteryLife);
 		
 		JTextArea txtrNumberOfDrones = new JTextArea();
@@ -375,7 +376,7 @@ public class AnalysisProgram_GUI extends JFrame {
 		droneBatteryChargeTime.setMinorTickSpacing(5);
 		droneBatteryChargeTime.setMaximum(500);
 		droneBatteryChargeTime.setMajorTickSpacing(5);
-		droneBatteryChargeTime.setBounds(160, 714, 140, 26);
+		droneBatteryChargeTime.setBounds(160, 777, 140, 26);
 		contentPane.add(droneBatteryChargeTime);
 		
 		JSlider droneBatteryLifeTime = new JSlider();
@@ -383,37 +384,37 @@ public class AnalysisProgram_GUI extends JFrame {
 		droneBatteryLifeTime.setMinorTickSpacing(5);
 		droneBatteryLifeTime.setMaximum(500);
 		droneBatteryLifeTime.setMajorTickSpacing(5);
-		droneBatteryLifeTime.setBounds(160, 747, 140, 26);
+		droneBatteryLifeTime.setBounds(160, 810, 140, 26);
 		contentPane.add(droneBatteryLifeTime);
 		
 		droneBegDateTextField = new JTextField();
 		droneBegDateTextField.setColumns(10);
-		droneBegDateTextField.setBounds(171, 625, 96, 20);
+		droneBegDateTextField.setBounds(171, 688, 96, 20);
 		contentPane.add(droneBegDateTextField);
 		
 		droneEndDateTextField = new JTextField();
 		droneEndDateTextField.setColumns(10);
-		droneEndDateTextField.setBounds(171, 658, 96, 20);
+		droneEndDateTextField.setBounds(171, 721, 96, 20);
 		contentPane.add(droneEndDateTextField);
 		
 		JButton btnTotalDroneSprayingCosts = new JButton("TOTAL Drone Spraying Costs");
 		btnTotalDroneSprayingCosts.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnTotalDroneSprayingCosts.setBounds(10, 813, 226, 26);
+		btnTotalDroneSprayingCosts.setBounds(10, 878, 226, 26);
 		contentPane.add(btnTotalDroneSprayingCosts);
 		
 		JLabel totalEmployeeAndEquipment_1 = new JLabel("$2500");
 		totalEmployeeAndEquipment_1.setFont(new Font("Tahoma", Font.BOLD, 11));
-		totalEmployeeAndEquipment_1.setBounds(246, 813, 102, 26);
+		totalEmployeeAndEquipment_1.setBounds(246, 878, 102, 26);
 		contentPane.add(totalEmployeeAndEquipment_1);
 		
 		JLabel totalEmployeeAndEquipment_1_1 = new JLabel("Days able to fly: 10");
 		totalEmployeeAndEquipment_1_1.setFont(new Font("Tahoma", Font.BOLD, 11));
-		totalEmployeeAndEquipment_1_1.setBounds(10, 850, 182, 26);
+		totalEmployeeAndEquipment_1_1.setBounds(10, 915, 182, 26);
 		contentPane.add(totalEmployeeAndEquipment_1_1);
 		
 		JLabel lblDroneEnergyCosts = new JLabel("Drone Energy Costs");
 		lblDroneEnergyCosts.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblDroneEnergyCosts.setBounds(10, 689, 237, 14);
+		lblDroneEnergyCosts.setBounds(10, 752, 237, 14);
 		contentPane.add(lblDroneEnergyCosts);
 		
 		JTextArea droneCostOfSpray = new JTextArea();
@@ -425,12 +426,12 @@ public class AnalysisProgram_GUI extends JFrame {
 		JTextArea txtrCostPerWatt = new JTextArea();
 		txtrCostPerWatt.setText("Cost Per Watt");
 		txtrCostPerWatt.setLineWrap(true);
-		txtrCostPerWatt.setBounds(10, 780, 140, 22);
+		txtrCostPerWatt.setBounds(10, 843, 140, 22);
 		contentPane.add(txtrCostPerWatt);
 		
 		textField = new JTextField();
 		textField.setColumns(10);
-		textField.setBounds(160, 784, 96, 20);
+		textField.setBounds(160, 847, 96, 20);
 		contentPane.add(textField);
 		
 		JSlider droneCostSpray = new JSlider();
@@ -454,7 +455,7 @@ public class AnalysisProgram_GUI extends JFrame {
 		JTextArea droneTankSize = new JTextArea();
 		droneTankSize.setText("Tank Size");
 		droneTankSize.setLineWrap(true);
-		droneTankSize.setBounds(10, 598, 140, 26);
+		droneTankSize.setBounds(10, 661, 140, 26);
 		contentPane.add(droneTankSize);
 		
 		JSlider droneCostSpray_1 = new JSlider();
@@ -462,13 +463,39 @@ public class AnalysisProgram_GUI extends JFrame {
 		droneCostSpray_1.setMinorTickSpacing(1);
 		droneCostSpray_1.setMaximum(50);
 		droneCostSpray_1.setMajorTickSpacing(1);
-		droneCostSpray_1.setBounds(160, 595, 140, 26);
+		droneCostSpray_1.setBounds(160, 658, 140, 26);
 		contentPane.add(droneCostSpray_1);
 		
 		JLabel droneWeightOutput = new JLabel("Drone Weight: 55lbs");
 		droneWeightOutput.setFont(new Font("Tahoma", Font.BOLD, 11));
-		droneWeightOutput.setBounds(10, 871, 182, 26);
+		droneWeightOutput.setBounds(10, 936, 182, 26);
 		contentPane.add(droneWeightOutput);
+		
+		JTextArea droneMixingCostEquipment = new JTextArea();
+		droneMixingCostEquipment.setText("Equipment Mixing Cost");
+		droneMixingCostEquipment.setLineWrap(true);
+		droneMixingCostEquipment.setBounds(20, 599, 140, 26);
+		contentPane.add(droneMixingCostEquipment);
+		
+		JSlider droneCostMixingEquipmentSlider = new JSlider();
+		droneCostMixingEquipmentSlider.setValue(20000);
+		droneCostMixingEquipmentSlider.setMinorTickSpacing(500);
+		droneCostMixingEquipmentSlider.setMaximum(50000);
+		droneCostMixingEquipmentSlider.setMajorTickSpacing(1000);
+		droneCostMixingEquipmentSlider.setBounds(160, 595, 140, 26);
+		droneCostMixingEquipmentSlider.addChangeListener(new ChangeListener() {
+			@Override
+			public void stateChanged(ChangeEvent event) {
+				int value = droneCostMixingEquipmentSlider.getValue();
+				//analysis.setEmployeeTrainingCosts(value);
+				droneMixingEquipmentCostLabel.setText("$" + value);
+			}
+		});
+		contentPane.add(droneCostMixingEquipmentSlider);
+		
+		droneMixingEquipmentCostLabel = new JLabel("$2500");
+		droneMixingEquipmentCostLabel.setBounds(311, 599, 48, 14);
+		contentPane.add(droneMixingEquipmentCostLabel);
 		
 		
 	}
