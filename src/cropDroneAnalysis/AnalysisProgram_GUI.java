@@ -445,7 +445,7 @@ public class AnalysisProgram_GUI extends JFrame {
 		JTextArea droneRequireMixing = new JTextArea();
 		droneRequireMixing.setText("Requires Mixing?");
 		droneRequireMixing.setLineWrap(true);
-		droneRequireMixing.setBounds(10, 562, 140, 26);
+		droneRequireMixing.setBounds(10, 564, 140, 26);
 		contentPane.add(droneRequireMixing);
 		
 		JCheckBox droneRequireMixChckbx = new JCheckBox("Yes");
