@@ -494,7 +494,7 @@ public class AnalysisProgram_GUI extends JFrame {
 		contentPane.add(droneCostMixingEquipmentSlider);
 		
 		droneMixingEquipmentCostLabel = new JLabel("$2500");
-		droneMixingEquipmentCostLabel.setBounds(311, 599, 48, 14);
+		droneMixingEquipmentCostLabel.setBounds(199, 612, 48, 26);
 		contentPane.add(droneMixingEquipmentCostLabel);
 		
 		
