@@ -300,7 +300,7 @@ public class AnalysisProgram_GUI extends JFrame {
 		JTextArea beginngDate = new JTextArea();
 		beginngDate.setText("Beginning Date");
 		beginngDate.setLineWrap(true);
-		beginngDate.setBounds(10, 688, 140, 22);
+		beginngDate.setBounds(10, 686, 140, 22);
 		contentPane.add(beginngDate);
 		
 		JTextArea endingDate = new JTextArea();
@@ -334,7 +334,7 @@ public class AnalysisProgram_GUI extends JFrame {
 		
 		numOfDronesUsedTextField = new JTextField();
 		numOfDronesUsedTextField.setColumns(10);
-		numOfDronesUsedTextField.setBounds(171, 73, 96, 20);
+		numOfDronesUsedTextField.setBounds(173, 73, 96, 20);
 		contentPane.add(numOfDronesUsedTextField);
 		
 		JSlider droneSetUpTime = new JSlider();
@@ -399,7 +399,7 @@ public class AnalysisProgram_GUI extends JFrame {
 		
 		JButton btnTotalDroneSprayingCosts = new JButton("TOTAL Drone Spraying Costs");
 		btnTotalDroneSprayingCosts.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnTotalDroneSprayingCosts.setBounds(10, 878, 226, 26);
+		btnTotalDroneSprayingCosts.setBounds(10, 878, 219, 26);
 		contentPane.add(btnTotalDroneSprayingCosts);
 		
 		JLabel totalEmployeeAndEquipment_1 = new JLabel("$2500");
