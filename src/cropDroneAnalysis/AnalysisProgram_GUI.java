@@ -39,7 +39,7 @@ public class AnalysisProgram_GUI extends JFrame {
 	private JTextField textField;
 
 	/**
-	 * Launch the application.
+	 * Launch the  application.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
