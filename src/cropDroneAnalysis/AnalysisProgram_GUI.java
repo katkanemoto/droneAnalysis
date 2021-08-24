@@ -1,4 +1,5 @@
 //Angelica
+//Kathy Kanemoto
 package cropDroneAnalysis;
 
 import java.awt.BorderLayout;
