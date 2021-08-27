@@ -1,4 +1,7 @@
 //Angelica 
+//Megan 
+//Kathy Kanemoto
+
 package cropDroneAnalysis;
 
 import java.awt.BorderLayout;
@@ -40,6 +43,8 @@ public class AnalysisProgram_GUI extends JFrame {
 	private JTextField droneEndDateTextField;
 	private JTextField textField;
 	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
 
 	/**
 	 * Launch the  application.
@@ -532,22 +537,22 @@ public class AnalysisProgram_GUI extends JFrame {
 		otherEquipmentCostLabel.setBounds(388, 56, 48, 14);
 		contentPane.add(otherEquipmentCostLabel);
 		
-		JTextArea txtrNumberOfHours = new JTextArea();
-		txtrNumberOfHours.setText("Number of Hours Flight");
-		txtrNumberOfHours.setLineWrap(true);
-		txtrNumberOfHours.setBounds(388, 73, 140, 22);
-		contentPane.add(txtrNumberOfHours);
+		JTextArea NumberOfHours = new JTextArea();
+		NumberOfHours.setText("Number of Hours Flight");
+		NumberOfHours.setLineWrap(true);
+		NumberOfHours.setBounds(388, 83, 140, 22);
+		contentPane.add(NumberOfHours);
 		
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
-		textField_1.setBounds(538, 75, 96, 20);
+		textField_1.setBounds(538, 85, 96, 20);
 		contentPane.add(textField_1);
 		
-		JTextArea txtrEmployeeTrainingCosts_1 = new JTextArea();
-		txtrEmployeeTrainingCosts_1.setText("Employee Training Costs");
-		txtrEmployeeTrainingCosts_1.setLineWrap(true);
-		txtrEmployeeTrainingCosts_1.setBounds(388, 116, 140, 22);
-		contentPane.add(txtrEmployeeTrainingCosts_1);
+		JTextArea PioltTrainingCosts = new JTextArea();
+		PioltTrainingCosts.setText("Employee Training Costs");
+		PioltTrainingCosts.setLineWrap(true);
+		PioltTrainingCosts.setBounds(388, 116, 140, 22);
+		contentPane.add(PioltTrainingCosts);
 		
 		JSlider employeeTrainingSlider_1 = new JSlider();
 		employeeTrainingSlider_1.setValue(0);
@@ -561,15 +566,120 @@ public class AnalysisProgram_GUI extends JFrame {
 		employeeTrainingCostLabel_1.setBounds(388, 138, 48, 14);
 		contentPane.add(employeeTrainingCostLabel_1);
 		
-		JTextArea txtrRepairAndUpgrade_1 = new JTextArea();
-		txtrRepairAndUpgrade_1.setText("Repair and Upgrade Costs");
-		txtrRepairAndUpgrade_1.setLineWrap(true);
-		txtrRepairAndUpgrade_1.setBounds(388, 166, 140, 22);
-		contentPane.add(txtrRepairAndUpgrade_1);
+		JTextArea RepairAndUpgrades = new JTextArea();
+		RepairAndUpgrades.setText("Repair and Upgrade Costs");
+		RepairAndUpgrades.setLineWrap(true);
+		RepairAndUpgrades.setBounds(388, 166, 140, 22);
+		contentPane.add(RepairAndUpgrades);
 		
 		JLabel repairAndUpgradeCostLabel_1 = new JLabel("$2500");
 		repairAndUpgradeCostLabel_1.setBounds(388, 188, 48, 14);
 		contentPane.add(repairAndUpgradeCostLabel_1);
+		
+		JSlider employeeTrainingSlider_1_1 = new JSlider();
+		employeeTrainingSlider_1_1.setValue(0);
+		employeeTrainingSlider_1_1.setMinorTickSpacing(500);
+		employeeTrainingSlider_1_1.setMaximum(10000);
+		employeeTrainingSlider_1_1.setMajorTickSpacing(500);
+		employeeTrainingSlider_1_1.setBounds(538, 166, 140, 26);
+		contentPane.add(employeeTrainingSlider_1_1);
+		
+		JButton btnTotalCropDuster = new JButton("TOTAL Crop Duster Cost");
+		btnTotalCropDuster.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnTotalCropDuster.setBounds(355, 212, 226, 26);
+		contentPane.add(btnTotalCropDuster);
+		
+		JLabel totalCropDusterCost = new JLabel("$2500");
+		totalCropDusterCost.setFont(new Font("Tahoma", Font.BOLD, 11));
+		totalCropDusterCost.setBounds(598, 212, 102, 26);
+		contentPane.add(totalCropDusterCost);
+		
+		JTextArea GroundSprayer = new JTextArea();
+		GroundSprayer.setText("Ground Spraier Cost");
+		GroundSprayer.setLineWrap(true);
+		GroundSprayer.setBounds(388, 264, 140, 22);
+		contentPane.add(GroundSprayer);
+		
+		JSlider otherEquipment_1 = new JSlider();
+		otherEquipment_1.setValue(20000);
+		otherEquipment_1.setMinorTickSpacing(1000);
+		otherEquipment_1.setMinimum(10000);
+		otherEquipment_1.setMaximum(40000);
+		otherEquipment_1.setMajorTickSpacing(1000);
+		otherEquipment_1.setBounds(538, 264, 140, 26);
+		contentPane.add(otherEquipment_1);
+		
+		JLabel otherEquipmentCostLabel_1 = new JLabel("$20000");
+		otherEquipmentCostLabel_1.setBounds(388, 288, 48, 14);
+		contentPane.add(otherEquipmentCostLabel_1);
+		
+		JTextArea NumberOfHours_1 = new JTextArea();
+		NumberOfHours_1.setText("Number of Hours Flight");
+		NumberOfHours_1.setLineWrap(true);
+		NumberOfHours_1.setBounds(388, 314, 140, 22);
+		contentPane.add(NumberOfHours_1);
+		
+		textField_2 = new JTextField();
+		textField_2.setColumns(10);
+		textField_2.setBounds(538, 316, 96, 20);
+		contentPane.add(textField_2);
+		
+		JTextArea txtrNumberOfEmployees_1 = new JTextArea();
+		txtrNumberOfEmployees_1.setText("Number of Employees");
+		txtrNumberOfEmployees_1.setLineWrap(true);
+		txtrNumberOfEmployees_1.setBounds(388, 350, 140, 22);
+		contentPane.add(txtrNumberOfEmployees_1);
+		
+		textField_3 = new JTextField();
+		textField_3.setColumns(10);
+		textField_3.setBounds(538, 347, 96, 20);
+		contentPane.add(textField_3);
+		
+		JTextArea txtrEmployeeTrainingCosts_1 = new JTextArea();
+		txtrEmployeeTrainingCosts_1.setText("Employee Training Costs");
+		txtrEmployeeTrainingCosts_1.setLineWrap(true);
+		txtrEmployeeTrainingCosts_1.setBounds(388, 379, 140, 22);
+		contentPane.add(txtrEmployeeTrainingCosts_1);
+		
+		JSlider employeeTrainingSlider_2 = new JSlider();
+		employeeTrainingSlider_2.setValue(0);
+		employeeTrainingSlider_2.setMinorTickSpacing(500);
+		employeeTrainingSlider_2.setMaximum(10000);
+		employeeTrainingSlider_2.setMajorTickSpacing(500);
+		employeeTrainingSlider_2.setBounds(538, 375, 140, 26);
+		contentPane.add(employeeTrainingSlider_2);
+		
+		JLabel employeeTrainingCostLabel_2 = new JLabel("$2500");
+		employeeTrainingCostLabel_2.setBounds(388, 408, 48, 14);
+		contentPane.add(employeeTrainingCostLabel_2);
+		
+		JTextArea txtrRepairAndUpgrade_1 = new JTextArea();
+		txtrRepairAndUpgrade_1.setText("Repair and Upgrade Costs");
+		txtrRepairAndUpgrade_1.setLineWrap(true);
+		txtrRepairAndUpgrade_1.setBounds(388, 425, 140, 22);
+		contentPane.add(txtrRepairAndUpgrade_1);
+		
+		JSlider repairAndUpgradeSlider_1 = new JSlider();
+		repairAndUpgradeSlider_1.setValue(0);
+		repairAndUpgradeSlider_1.setMinorTickSpacing(500);
+		repairAndUpgradeSlider_1.setMaximum(10000);
+		repairAndUpgradeSlider_1.setMajorTickSpacing(500);
+		repairAndUpgradeSlider_1.setBounds(538, 424, 140, 26);
+		contentPane.add(repairAndUpgradeSlider_1);
+		
+		JLabel repairAndUpgradeCostLabel_2 = new JLabel("$2500");
+		repairAndUpgradeCostLabel_2.setBounds(388, 446, 48, 14);
+		contentPane.add(repairAndUpgradeCostLabel_2);
+		
+		JButton btnTotalGroundSprayer = new JButton("TOTAL Group Spraier Cost");
+		btnTotalGroundSprayer.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnTotalGroundSprayer.setBounds(355, 463, 226, 26);
+		contentPane.add(btnTotalGroundSprayer);
+		
+		JLabel totalEmployeeAndEquipment_2 = new JLabel("$2500");
+		totalEmployeeAndEquipment_2.setFont(new Font("Tahoma", Font.BOLD, 11));
+		totalEmployeeAndEquipment_2.setBounds(591, 467, 102, 26);
+		contentPane.add(totalEmployeeAndEquipment_2);
 		
 		
 	}
