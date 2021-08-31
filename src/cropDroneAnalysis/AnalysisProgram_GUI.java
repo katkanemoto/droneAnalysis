@@ -1,5 +1,5 @@
 //Angelica 
-//Megan 
+//Megan Phillips
 //Kathy Kanemoto
 
 package cropDroneAnalysis;
