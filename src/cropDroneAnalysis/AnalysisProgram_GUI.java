@@ -1,5 +1,6 @@
 //Angelica
 //Kathy Kanemoto
+//Megan Phillips
 package cropDroneAnalysis;
 
 import java.awt.BorderLayout;
