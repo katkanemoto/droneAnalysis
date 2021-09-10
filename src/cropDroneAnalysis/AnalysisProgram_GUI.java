@@ -1,3 +1,4 @@
+
 //Angelica 
 //Megan Phillips
 //Kathy Kanemoto
@@ -681,6 +682,163 @@ public class AnalysisProgram_GUI extends JFrame {
 		totalEmployeeAndEquipment_2.setBounds(591, 467, 102, 26);
 		contentPane.add(totalEmployeeAndEquipment_2);
 		
+		JLabel totalEmployeeAndEquipment_1_1 = new JLabel("Days able to fly: 10");
+		totalEmployeeAndEquipment_1_1.setFont(new Font("Tahoma", Font.BOLD, 11));
+		totalEmployeeAndEquipment_1_1.setBounds(10, 971, 182, 26);
+		contentPane.add(totalEmployeeAndEquipment_1_1);
+		
+		JLabel lblDroneEnergyCosts = new JLabel("Drone Energy Costs");
+		lblDroneEnergyCosts.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblDroneEnergyCosts.setBounds(10, 764, 237, 14);
+		contentPane.add(lblDroneEnergyCosts);
+		
+		JTextArea droneCostOfSpray = new JTextArea();
+		droneCostOfSpray.setText("Cost of Spray");
+		droneCostOfSpray.setLineWrap(true);
+		droneCostOfSpray.setBounds(10, 483, 140, 26);
+		contentPane.add(droneCostOfSpray);
+		
+		JTextArea droneChargeTimesTextArea = new JTextArea();
+		droneChargeTimesTextArea.setText("Number of Battery Charges");
+		droneChargeTimesTextArea.setLineWrap(true);
+		droneChargeTimesTextArea.setBounds(10, 888, 140, 22);
+		contentPane.add(droneChargeTimesTextArea);
+		
+		droneChargeTimesTextField = new JTextField();
+		droneChargeTimesTextField.setColumns(10);
+		droneChargeTimesTextField.setBounds(171, 892, 96, 20);
+		contentPane.add(droneChargeTimesTextField);
+		
+		JSlider droneCostSpray = new JSlider();
+		droneCostSpray.setValue(20000);
+		droneCostSpray.setMinorTickSpacing(5);
+		droneCostSpray.setMaximum(500);
+		droneCostSpray.setMajorTickSpacing(5);
+		droneCostSpray.setBounds(160, 483, 140, 26);
+		contentPane.add(droneCostSpray);
+		
+		JTextArea droneRequireMixing = new JTextArea();
+		droneRequireMixing.setText("Requires Mixing?");
+		droneRequireMixing.setLineWrap(true);
+		droneRequireMixing.setBounds(10, 520, 140, 26);
+		contentPane.add(droneRequireMixing);
+		
+		JCheckBox droneRequireMixChckbx = new JCheckBox("Yes");
+		droneRequireMixChckbx.setBounds(170, 521, 97, 23);
+		contentPane.add(droneRequireMixChckbx);
+		
+		JTextArea droneTankSizeTextArea = new JTextArea();
+		droneTankSizeTextArea.setText("Tank Size");
+		droneTankSizeTextArea.setLineWrap(true);
+		droneTankSizeTextArea.setBounds(10, 664, 140, 26);
+		contentPane.add(droneTankSizeTextArea);
+		
+		JSlider droneTankSizeSlider = new JSlider();
+		droneTankSizeSlider.setValue(20000);
+		droneTankSizeSlider.setMinorTickSpacing(1);
+		droneTankSizeSlider.setMaximum(50);
+		droneTankSizeSlider.setMajorTickSpacing(1);
+		droneTankSizeSlider.setBounds(160, 661, 140, 26);
+		contentPane.add(droneTankSizeSlider);
+		
+		JLabel droneWeightOutput = new JLabel("Drone Weight: 55lbs");
+		droneWeightOutput.setFont(new Font("Tahoma", Font.BOLD, 11));
+		droneWeightOutput.setBounds(10, 992, 182, 26);
+		contentPane.add(droneWeightOutput);
+		
+		JTextArea droneCostEquipmentMixingTextArea = new JTextArea();
+		droneCostEquipmentMixingTextArea.setText("Equipment Mixing Cost");
+		droneCostEquipmentMixingTextArea.setLineWrap(true);
+		droneCostEquipmentMixingTextArea.setBounds(51, 557, 140, 26);
+		contentPane.add(droneCostEquipmentMixingTextArea);
+		
+		JSlider droneCostEquipmentMixingSlider = new JSlider();
+		droneCostEquipmentMixingSlider.setValue(20000);
+		droneCostEquipmentMixingSlider.setMinorTickSpacing(500);
+		droneCostEquipmentMixingSlider.setMaximum(50000);
+		droneCostEquipmentMixingSlider.setMajorTickSpacing(1000);
+		droneCostEquipmentMixingSlider.setBounds(201, 551, 140, 26);
+		droneCostEquipmentMixingSlider.addChangeListener(new ChangeListener() {
+			@Override
+			public void stateChanged(ChangeEvent event) {
+				int value = droneCostEquipmentMixingSlider.getValue();
+				//analysis.setEmployeeTrainingCosts(value);
+				droneCostEquipmentMixingLabel.setText("$" + value);
+			}
+		});
+		contentPane.add(droneCostEquipmentMixingSlider);
+		
+		droneCostEquipmentMixingLabel = new JLabel("$2500");
+		droneCostEquipmentMixingLabel.setBounds(341, 551, 48, 26);
+		contentPane.add(droneCostEquipmentMixingLabel);
+		
+		JTextArea droneCostWaterMixingTextArea = new JTextArea();
+		droneCostWaterMixingTextArea.setText("Water Mixing Cost");
+		droneCostWaterMixingTextArea.setLineWrap(true);
+		droneCostWaterMixingTextArea.setBounds(51, 589, 140, 26);
+		contentPane.add(droneCostWaterMixingTextArea);
+		
+		JSlider droneCostWaterMixingSlider = new JSlider();
+		droneCostWaterMixingSlider.setValue(20000);
+		droneCostWaterMixingSlider.setMinorTickSpacing(500);
+		droneCostWaterMixingSlider.setMaximum(50000);
+		droneCostWaterMixingSlider.setMajorTickSpacing(1000);
+		droneCostWaterMixingSlider.setBounds(201, 590, 140, 26);
+		droneCostWaterMixingSlider.addChangeListener(new ChangeListener() {
+			@Override
+			public void stateChanged(ChangeEvent event) {
+				int value = droneCostWaterMixingSlider.getValue();
+				//analysis.setEmployeeTrainingCosts(value);
+				droneCostWaterMixingLabel.setText("$" + value);
+			}
+		});
+		contentPane.add(droneCostWaterMixingSlider);
+		
+		droneCostWaterMixingLabel = new JLabel("$2500");
+		droneCostWaterMixingLabel.setBounds(341, 588, 48, 26);
+		contentPane.add(droneCostWaterMixingLabel);
+		
+		JLabel totalEmployeeAndEquipment_1_2 = new JLabel("$2500");
+		totalEmployeeAndEquipment_1_2.setFont(new Font("Tahoma", Font.BOLD, 11));
+		totalEmployeeAndEquipment_1_2.setBounds(246, 971, 102, 26);
+		contentPane.add(totalEmployeeAndEquipment_1_2);
+		
+		JTextArea droneMixingTimeTextArea = new JTextArea();
+		droneMixingTimeTextArea.setText("Mixing Time");
+		droneMixingTimeTextArea.setLineWrap(true);
+		droneMixingTimeTextArea.setBounds(51, 624, 140, 26);
+		contentPane.add(droneMixingTimeTextArea);
+		
+		JSlider droneMixingTimeSlider = new JSlider();
+		droneMixingTimeSlider.setValue(20000);
+		droneMixingTimeSlider.setMinorTickSpacing(500);
+		droneMixingTimeSlider.setMaximum(120);
+		droneMixingTimeSlider.setMajorTickSpacing(1000);
+		droneMixingTimeSlider.setBounds(201, 627, 140, 26);
+		droneMixingTimeSlider.addChangeListener(new ChangeListener() {
+			@Override
+			public void stateChanged(ChangeEvent event) {
+				int value = droneMixingTimeSlider.getValue();
+				//analysis.setEmployeeTrainingCosts(value);
+				droneMixingTimeLabel.setText(value + " mins");
+			}
+		});
+		contentPane.add(droneMixingTimeSlider);
+		
+		droneMixingTimeLabel = new JLabel("120 mins ");
+		droneMixingTimeLabel.setBounds(341, 625, 71, 26);
+		contentPane.add(droneMixingTimeLabel);
+		
+		JTextArea droneCostPerWattTextArea = new JTextArea();
+		droneCostPerWattTextArea.setText("Cost Per Kilowatt hour");
+		droneCostPerWattTextArea.setLineWrap(true);
+		droneCostPerWattTextArea.setBounds(10, 855, 140, 22);
+		contentPane.add(droneCostPerWattTextArea);
+		
+		droneCostPerWattTextField = new JTextField();
+		droneCostPerWattTextField.setColumns(10);
+		droneCostPerWattTextField.setBounds(171, 859, 96, 20);
+		contentPane.add(droneCostPerWattTextField);
 		
 	}
 }
